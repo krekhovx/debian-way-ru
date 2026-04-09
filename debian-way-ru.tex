@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif}
+
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
+\emergencystretch=2em
+\usepackage{microtype}
+
+\usepackage{xurl}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[russian]{babel}
+\usepackage[
+  a4paper,
+  left=2cm,
+  right=2cm,
+  top=1.5cm,
+  bottom=1.5cm
+]{geometry}
+\usepackage[pdftitle={Руководство по участию в Debian}]{hyperref}
+
+\begin{document}
+
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\begin{center}
+
+\vspace*{0.5cm}
+{\huge\color{cyan}
+Руководство по участию в Debian\par}
+\vspace{1.5cm}
+
+{\large\color{magenta} debian-way-ru\par}
+{\large version 1 - 2026\par}
+\vspace{1.5cm}
+
+{\large
+Kirill Rekhov\par
+krekhov.dev@gmail.com\par}
+\vspace{1.5cm}
+
+\begin{minipage}{0.80\textwidth}
+\centering
+{\large\color{darkgray}
+Практическое руководство по пакетированию и другим способам участия в Debian\par}
+\end{minipage}
+
+\end{center}
+\end{titlepage}
+\hypersetup{pageanchor=true}
+
+Debian --- это один из самых популярных дистрибутивов Linux, известный своей
+стабильностью, безопасностью и открытым исходным кодом. Он используется как в
+домашних, так и в корпоративных системах по всему миру. Этот проект управляется
+сообществом добровольцев, которые разрабатывают и поддерживают тысячи пакетов
+для пользователей и разработчиков.
+
+\vspace{-0.5cm}
+\section*{Об авторе}
+\addcontentsline{toc}{section}{Об авторе}
+\vspace{-0.5cm}
+\input{chapters/about-author}
+
+\vspace{-0.5cm}
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+\vspace{-0.5cm}
+\input{chapters/introduction}
+
+\vspace{-0.5cm}
+\section*{Содержание}
+\addcontentsline{toc}{section}{Содержание}
+\vspace{-0.5cm}
+\input{chapters/content}
+
+\end{document}
